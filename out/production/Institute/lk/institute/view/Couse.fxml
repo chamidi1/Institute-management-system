@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="728.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.institute.controller.StudentRegisterController">
+   <children>
+      <Pane layoutX="10.0" layoutY="10.0" prefHeight="61.0" prefWidth="850.0" style="-fx-background-color: lightblue;">
+         <children>
+            <Label layoutX="41.0" layoutY="14.0" text="ABC Institute" textAlignment="CENTER" textFill="#010217">
+               <font>
+                  <Font name="Calibri" size="39.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="51.0" layoutY="24.0" text="ABC Institute" textAlignment="CENTER" textFill="#010217">
+         <font>
+            <Font name="Calibri" size="39.0" />
+         </font>
+      </Label>
+      <VBox layoutX="115.0" layoutY="157.0" prefHeight="560.0" prefWidth="476.0">
+         <children>
+            <JFXTextField fx:id="txtid" prefHeight="31.0" prefWidth="222.0" promptText="Student Id">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="5.0" right="5.0" top="40.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="txtname" prefHeight="31.0" prefWidth="222.0" promptText="Student Name">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="5.0" right="5.0" top="40.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="txtAddress" prefHeight="31.0" prefWidth="222.0" promptText="Student Address">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="5.0" right="5.0" top="40.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="txtContact" prefHeight="31.0" prefWidth="222.0" promptText="Student Contact">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="5.0" right="5.0" top="40.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXDatePicker fx:id="txtdob" prefHeight="31.0" prefWidth="274.0" promptText="Date of Birth">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="5.0" right="5.0" top="40.0" />
+               </VBox.margin>
+            </JFXDatePicker>
+            <JFXTextField fx:id="txtGender" prefHeight="31.0" prefWidth="222.0" promptText="Student Gender">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="5.0" right="5.0" top="40.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXButton fx:id="addbtn" onAction="#Addstudent" prefHeight="35.0" prefWidth="136.0" style="-fx-background-color: #fcb115;" text="Add Student">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="120.0" top="50.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+      <Label layoutX="51.0" layoutY="140.0" prefHeight="21.0" prefWidth="274.0" text="Student Detsails">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn1" layoutX="676.0" layoutY="100.0" mnemonicParsing="false" onAction="#Register1" prefHeight="31.0" prefWidth="155.0" style="-fx-background-color: lightgreen;" text="Register" />
+      <Button fx:id="btn2" layoutX="502.0" layoutY="100.0" mnemonicParsing="false" onAction="#Student1" prefHeight="31.0" prefWidth="155.0" style="-fx-background-color: lightyellow;" text="course" />
+   </children>
+</AnchorPane>
